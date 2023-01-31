@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    background-color: rgb(127, 128, 128);
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+header h1{
+    font-family: Roboto;
+    color: white;
+    margin: 20px;
+}
+
+/* CARTES */
+
+#container{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 20px;
+}
+
+#temporizador{
+  color: white;
+}
+
+/* prova */
+
+.flip-card, .flip-card1, .flip-card2, .flip-card3, .flip-card4, .flip-card5 {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card-toggle {
+  transform: rotateY(180deg);
+} 
+ 
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb;
+  color: white;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: rgb(255, 255, 255);
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.flip-card-back img {
+  height: 200px;
+}
+
+/*  */
+
+.flip-card-trobada {
+  background-color: lightgreen;
+  color: white;
+  transform: rotateY(180deg);
+}
