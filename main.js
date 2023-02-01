@@ -187,47 +187,38 @@ function añadirCartas() {
   }
 };
 
-function rotarCarta () {
-
+function rotarCarta() {
   let carta = document.querySelectorAll('.flip-card-inner');
 
   carta.forEach(flip_card_inner => {
-
     flip_card_inner.addEventListener('click', () => {
-      setTimeout(3000);
       flip_card_inner.style.transform = 'rotateY(180deg)'; //rotar carta
-      setTimeout(1000);
-    });
 
-    flip_card_inner.addEventListener('click', () => {
-      
       if (contador == 0) {
         primeraCarta = flip_card_inner;
         contador++;
-        setTimeout(1000)
       } else {
         segonaCarta = flip_card_inner;
         contador++;
-        setTimeout(1000)
-  
       };
-  
+    
       if (contador == 2) {
         if ( primeraCarta.classList.value == segonaCarta.classList.value) {
           alert('pareja!!');
           contador = 0;
-          setTimeout(1000)
         } else {
-          setTimeout(1000)
           contador = 0;
           alert('error');
-          primeraCarta.style.removeProperty('transform');
-          segonaCarta.style.removeProperty('transform');
+          setTimeout(() => {
+            primeraCarta.style.removeProperty('transform');
+            segonaCarta.style.removeProperty('transform');
+          }, 1000);
         };
       };
     });
   });
 };
+
 
 function temporizador(){
   temporizador = setInterval(() => {
@@ -235,3 +226,5 @@ function temporizador(){
       document.getElementById('temporizador').innerHTML = tiempo;
   }, 1000);
 };
+
+
