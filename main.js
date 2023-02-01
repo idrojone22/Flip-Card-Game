@@ -80,6 +80,7 @@ function añadirCartas() {
       };
       numeroPareja++;
       numeroPareja++;
+      randomizarCartes = Math.round (Math.random() * 2);
   } else if ( randomizarCartes == 1) {
       for (let i = 0; i < numeroPareja; i++) {
           for (let i = 0; i <1; i++) {
@@ -132,6 +133,7 @@ function añadirCartas() {
       };
       numeroPareja++;
       numeroPareja++;
+      randomizarCartes = Math.round (Math.random() * 2);
   } else {
     for (let i = 0; i < numeroPareja; i++) {
       for (let i = 0; i <1; i++) {
@@ -184,6 +186,7 @@ function añadirCartas() {
   };
   numeroPareja++;
   numeroPareja++;
+  randomizarCartes = Math.round (Math.random() * 2);
   }
 };
 
