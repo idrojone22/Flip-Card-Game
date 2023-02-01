@@ -124,7 +124,7 @@ function añadirCartas() {
                           </div>
                       </div>
               </section>
-              `
+            `
           };
           numeroCarta++;
           numeroIdentidad++;
@@ -229,5 +229,3 @@ function temporizador(){
       document.getElementById('temporizador').innerHTML = tiempo;
   }, 1000);
 };
-
-
