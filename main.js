@@ -3,12 +3,20 @@ let pantalla = document.getElementById('pantalla');
 let randomizarCartes = Math.round (Math.random() * 2);
 let numero = 1;
 let numeroPareja = 1;
+let numeroNivel = 1;
 let contador = 0;
 let primeraCarta;
 let segonaCarta;
 let tiempo = 0;
 let win = 0;
 let order = [];
+
+
+// if (numeroPareja == numeroNivel) {
+//   jugar();
+// } else {
+//   siguiente_nivel();
+// }
 
 function jugar() {
   añadirCartas();
@@ -20,6 +28,8 @@ function siguiente_nivel() {
   numeroPareja++;
   añadirCartas();
   rotarCarta();
+  numeroNivel++;
+  localStorage.setItem("nivel", numeroNivel);
 };
 
 function añadirCartas() {
@@ -68,6 +78,13 @@ function rotarCarta() {
         if ( primeraCarta.classList.value == segonaCarta.classList.value) {
           alert('pareja!!');
           contador = 0;
+          win++;
+          console.log(win);
+          console.log( numeroPareja);
+          if (win == numeroPareja) {
+            localStorage.setItem ( "tiempo", tiempo);
+            win = 0;
+          };
         } else {
           contador = 0;
           alert('error');
