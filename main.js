@@ -12,11 +12,11 @@ let win = 0;
 let order = [];
 
 
-// if (numeroPareja == numeroNivel) {
-//   jugar();
-// } else {
-//   siguiente_nivel();
-// }
+if (numeroPareja != numeroNivel) {
+  numeroPareja++;
+} else {
+  siguiente_nivel();
+};
 
 function jugar() {
   añadirCartas();
@@ -30,11 +30,11 @@ function siguiente_nivel() {
   rotarCarta();
   numeroNivel++;
   localStorage.setItem("nivel", numeroNivel);
+  tiempo = 0;
 };
 
 function añadirCartas() {
   container.innerHTML = '';
-  tiempo = 0;
   for (let i = 0; i < numeroPareja; i++) {
     for (let i = 0; i < 2; i++) {
       order.push(numero)
@@ -104,4 +104,4 @@ function temporizador(){
       tiempo++
       document.getElementById('temporizador').innerHTML = tiempo;
   }, 1000);
-};
+};    
