@@ -10,6 +10,7 @@ let segonaCarta;
 let tiempo = 0;
 let win = 0;
 let order = [];
+temporizador();
 
 for( numeroNivel = 1; localStorage.getItem("nivel") != numeroNivel; numeroNivel++) {
   console.log(numeroNivel, "numeroNIvel");
@@ -26,9 +27,11 @@ if(localStorage.getItem("nivel") == numeroPareja) {
 function jugar() {
   añadirCartas();
   rotarCarta();
-  temporizador();
+  tiempo = 0;
   console.log(numeroNivel, "numeroNivel");
-  localStorage.setItem("nivel", numeroNivel); 
+  localStorage.setItem("nivel", numeroNivel);
+  numeroPareja = 1;
+  localStorage.setItem("nivel", numeroNivel);
 }
 
 function siguiente_nivel() {
