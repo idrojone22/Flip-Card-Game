@@ -3,20 +3,13 @@ let pantalla = document.getElementById('pantalla');
 let randomizarCartes = Math.round (Math.random() * 2);
 let numero = 1;
 let numeroPareja = 1;
-let numeroNivel = 1;
+let numeroNivel;
 let contador = 0;
 let primeraCarta;
 let segonaCarta;
 let tiempo = 0;
 let win = 0;
 let order = [];
-
-
-if (numeroPareja != numeroNivel) {
-  numeroPareja++;
-} else {
-  siguiente_nivel();
-};
 
 function jugar() {
   añadirCartas();
