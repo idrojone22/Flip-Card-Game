@@ -32,6 +32,7 @@ header h1{
 
 #temporizador{
   color: white;
+  margin-top: 20px;
 }
 
 /* prova */
@@ -89,4 +90,25 @@ header h1{
   background-color: lightgreen;
   color: white;
   transform: rotateY(180deg);
+}
+
+.button, .button1{
+  font-family: Roboto;
+  color: #ffffff;
+  font-size: 16px;
+  padding: 10px;
+  text-decoration: none;
+  -webkit-border-radius: 19px;
+  -moz-border-radius: 19px;
+  border-radius: 19px;
+  -webkit-box-shadow: 4px 4px 3px #000000;
+  -moz-box-shadow: 4px 4px 3px #000000;
+  box-shadow: 4px 4px 3px #000000;
+  text-shadow: 1px 1px 3px #000000;
+  border: solid #571f38 0px;
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#e6e6e6), to(#000000));
+  background: -moz-linear-gradient(top, #e6e6e6, #000000);
+}
+.button:hover {
+  background: #9a73bf;
 }

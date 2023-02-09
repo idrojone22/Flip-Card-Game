@@ -108,7 +108,6 @@ function rotarCarta() {
   });
 };
 
-
 //calcual el temps que tardes en completar un nivell
 function temporizador(){
   temporizador = setInterval(() => {
