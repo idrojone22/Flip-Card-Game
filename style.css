@@ -30,6 +30,13 @@ header h1{
   margin: 20px;
 }
 
+#pantalla{
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 #temporizador{
   color: white;
   margin-top: 20px;
@@ -93,6 +100,8 @@ header h1{
 }
 
 .button, .button1{
+  display: flex;
+  justify-content: center;
   font-family: Roboto;
   color: #ffffff;
   font-size: 16px;
@@ -108,7 +117,22 @@ header h1{
   border: solid #571f38 0px;
   background: -webkit-gradient(linear, 0 0, 0 100%, from(#e6e6e6), to(#000000));
   background: -moz-linear-gradient(top, #e6e6e6, #000000);
+  margin: 1em;
 }
 .button:hover {
   background: #9a73bf;
+}
+
+.button2 {
+  display: flex;
+  justify-content: center;
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#e6e6e6), to(#000000));
+  background: -moz-linear-gradient(top, #e6e6e6, #000000);
+  -webkit-border-radius: 19px;
+  -moz-border-radius: 19px;
+  border-radius: 19px;
+  -webkit-box-shadow: 4px 4px 3px #000000;
+  -moz-box-shadow: 4px 4px 3px #000000;
+  margin-left: 20em;
+  margin-right: 20em;
 }

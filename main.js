@@ -12,6 +12,8 @@ let win = 0;
 let order = [];
 temporizador();
 
+
+
 for( numeroNivel = 1; localStorage.getItem("nivel") != numeroNivel; numeroNivel++) {
   console.log(numeroNivel, "numeroNIvel");
 };
@@ -31,6 +33,7 @@ function jugar() {
   console.log(numeroNivel, "numeroNivel");
   localStorage.setItem("nivel", numeroNivel);
   numeroPareja = 1;
+  numeroNivel = 1;
   localStorage.setItem("nivel", numeroNivel);
 }
 
@@ -46,7 +49,7 @@ function siguiente_nivel() {
 };
 
 function añadirCartas() {
-  container.innerHTML = '';
+  pantalla.innerHTML = '';
   for (let i = 0; i < numeroPareja; i++) {
     for (let i = 0; i < 2; i++) {
       order.push(numero)
@@ -55,7 +58,7 @@ function añadirCartas() {
   numero++;    
   };
   order.forEach( numero => {
-    container.innerHTML += 
+    pantalla.innerHTML += 
     `
     <div class="flip-card">
       <div class="flip-card-inner ${numero}">
