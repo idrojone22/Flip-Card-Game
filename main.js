@@ -16,6 +16,12 @@ let win = 0;
 //variables para la funcion temporizador
 let tiempo = 0;
 
+
+function reiniciar() {
+    localStorage.clear();
+    numeroPareja = 1;
+};
+
 function jugar() {
     añadirCartas();
     rotarCarta();
