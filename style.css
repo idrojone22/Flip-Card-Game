@@ -99,7 +99,7 @@ header h1{
   transform: rotateY(180deg);
 }
 
-.button, .button1{
+/* .button, .button1{
   display: flex;
   justify-content: center;
   font-family: Roboto;
@@ -135,4 +135,4 @@ header h1{
   -moz-box-shadow: 4px 4px 3px #000000;
   margin-left: 20em;
   margin-right: 20em;
-}
+} */
