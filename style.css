@@ -23,7 +23,7 @@ header h1{
 
 /* CARTES */
 
-#container{
+.container{
   display: flex;
   justify-content: center;
   gap: 20px;
@@ -40,6 +40,11 @@ header h1{
 #temporizador{
   color: white;
   margin-top: 20px;
+
+}
+
+.button{
+  gap: 20px;
 }
 
 /* prova */
@@ -59,6 +64,16 @@ header h1{
   text-align: center;
   transition: transform 0.8s;
   transform-style: preserve-3d;
+  animation: inicio 1s;
+}
+
+@keyframes inicio {
+  0%, 100% {
+      transform: rotateY(0deg)
+  } 
+  20%, 80%{
+      transform: rotateY(180deg);
+  }
 }
 
 /* Do an horizontal flip when you move the mouse over the flip box container */
@@ -91,48 +106,25 @@ header h1{
   height: 200px;
 }
 
-/*  */
 
-.flip-card-trobada {
-  background-color: lightgreen;
-  color: white;
-  transform: rotateY(180deg);
-}
-
-/* .button, .button1{
-  display: flex;
-  justify-content: center;
-  font-family: Roboto;
-  color: #ffffff;
-  font-size: 16px;
-  padding: 10px;
-  text-decoration: none;
-  -webkit-border-radius: 19px;
-  -moz-border-radius: 19px;
-  border-radius: 19px;
-  -webkit-box-shadow: 4px 4px 3px #000000;
-  -moz-box-shadow: 4px 4px 3px #000000;
-  box-shadow: 4px 4px 3px #000000;
-  text-shadow: 1px 1px 3px #000000;
-  border: solid #571f38 0px;
-  background: -webkit-gradient(linear, 0 0, 0 100%, from(#e6e6e6), to(#000000));
-  background: -moz-linear-gradient(top, #e6e6e6, #000000);
-  margin: 1em;
+.button, .button1 {
+	background-color:#7d6e99;
+	border-radius:28px;
+	border:1px solid #7d6e99;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:28px;
+	padding:16px 31px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
 }
 .button:hover {
-  background: #9a73bf;
+	background-color:#93aada;
+}
+.button:active {
+	position:relative;
+	top:1px;
 }
 
-.button2 {
-  display: flex;
-  justify-content: center;
-  background: -webkit-gradient(linear, 0 0, 0 100%, from(#e6e6e6), to(#000000));
-  background: -moz-linear-gradient(top, #e6e6e6, #000000);
-  -webkit-border-radius: 19px;
-  -moz-border-radius: 19px;
-  border-radius: 19px;
-  -webkit-box-shadow: 4px 4px 3px #000000;
-  -moz-box-shadow: 4px 4px 3px #000000;
-  margin-left: 20em;
-  margin-right: 20em;
-} */
