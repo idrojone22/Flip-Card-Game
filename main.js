@@ -66,7 +66,7 @@ function añadirCartas() {
     order = [];
 };
 
-function rotarCarta() {
+/*function rotarCarta() {
     let carta = document.querySelectorAll('.flip-card-inner');
 
     carta.forEach(flip_card_inner => {
@@ -97,7 +97,7 @@ function rotarCarta() {
             };
         });
     });
-};
+}; */
 
 function temporizador(){    // -> Calcula los segundos que tardas 
     temporizador = setInterval(() => {
