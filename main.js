@@ -66,6 +66,8 @@ function añadirCartas() {
     order = [];
 };
 
+
+
 /*function rotarCarta() {
     let carta = document.querySelectorAll('.flip-card-inner');
 
